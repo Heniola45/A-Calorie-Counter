@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calorie Counter</title>
+        <link rel="stylesheet" href="./counter.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <div class="card-container">
+            <div class="counter-section">
+                <div class="counter-title">
+                    <h1>Calorie Counter</h1>
+                    <div class="result" id="result">
+                        <h1 id="result-output">250</h1>
+                        <p>Calories</p>
+                    </div>
+                </div>
+
+                <form id="form">
+                    <div class="input">
+                        <label for="walking">Walking Time</label>
+                        <input type="number" name="walking" id="walkingTime" placeholder="Minutes spent walking">
+                    </div>
+        
+                    <div class="input">
+                        <label for="running">Running Time</label>
+                        <input type="number" name="running" id="runningTime" placeholder="Minutes spent running">
+                    </div>
+        
+                    <div class="input">
+                        <label for="cycling">Cycling Time</label>
+                        <input type="number" name="cycling" id="cyclingTime" placeholder="Minutes spent cycling">
+                    </div>
+                    
+                    <button class="button" id="button">Calculate my calories</button>
+        
+                </form>
+            </div>
+        
+            <script src="./index.js"></script>
+        
+        </div>
+    </body>
+</html>

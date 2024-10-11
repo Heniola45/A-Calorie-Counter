@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", system-ui;
+}
+
+:root {
+    /* COLOR VARIABLES */
+    --backgroundColor: #072964;
+    --counterSectionColor: rgb(4, 4, 56);
+    --bigTextColor: #faf9fb;
+    --inputBackgroundColor: #0a3176;
+    --smallTextColor: #333333;
+    --buttonColor: #070707;
+    --buttonTextColor: white;
+    --hoverButtonColor: #e5e2ea;
+
+    /* TEXT VARIABLES */
+    --headerTextSize: 1rem;
+    --bodyTextSize: 1.2rem;
+    --buttonTextSize: 1.1rem;
+    
+
+    /* SPACE VARIABLES */
+    --rowGapSpace: 2rem;
+    --padding: 2rem;
+    --smallestPadding: 1rem; 
+
+}
+
+@media only screen and (max-width: 600px) {
+    .card-container {
+        width: 90%;
+    }
+}
+
+.card-container {
+    width: 40%;
+    height: auto;
+    background-color: var(--backgroundColor);
+    padding: var(--padding);
+    border-radius: 0.75rem;
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--rowGapSpace);
+}
+
+.counter-section {
+    justify-content: start;
+    align-items: start;
+}
+
+.counter-title {
+    width: 100%;
+    height: auto;
+    font-size: var(--headerTextSize);
+    color: var(--bigTextColor);
+    text-align: center;
+
+}
+
+.result {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    align-self: stretch;
+}
+
+.result p{
+    color: var(--bodyTextSize);
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+#form {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: var(--rowGapSpace);
+    padding-top: 1rem;
+}
+
+.input{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+    align-self: stretch;
+    border: none;
+}
+
+input{
+    color: var(--bigTextColor);
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+label{
+    color: var(--hoverButtonColor);
+    font-size: var(--bodyTextSize);
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+}
+
+#walkingTime {
+    width: 100%;
+    height: auto;
+    background-color: var(--inputBackgroundColor);
+    border: none;
+    padding: var(--smallestPadding);
+    border-radius: 0.75rem;
+}
+
+#runningTime {
+    width: 100%;
+    height: auto;
+    background-color: var(--inputBackgroundColor);
+    border: none;
+    padding: var(--smallestPadding);
+    border-radius: 0.75rem;
+}
+
+#cyclingTime {
+    width: 100%;
+    height: auto;
+    background-color: var(--inputBackgroundColor);
+    border: none;
+    padding: var(--smallestPadding);
+    border-radius: 0.75rem;
+}
+
+button {
+    width: 100%;
+    height: auto;
+    background-color: var(--bigTextColor);
+    color: var(--backgroundColor);
+    font-size: var(--buttonTextSize);
+    font-weight: 500;
+    border: none;
+    outline: none;
+    padding: var(--smallestPadding);
+    border: none;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    
+}
+
+button:hover {
+    background-color:var(--hoverButtonColor); 
+ }
+
